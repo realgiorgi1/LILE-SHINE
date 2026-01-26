@@ -396,22 +396,25 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				background-color: linear-gradient(0deg, rgba(128,206,255,1) 0%, rgba(31,81,83,1) 39%, rgba(8,54,56,1) 87%, rgba(28,0,29,1) 100%);
-				background-image: url("images/overlay.png");
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				-moz-justify-content: center;
-				-webkit-justify-content: center;
-				-ms-justify-content: center;
-				justify-content: center;
-				padding: 1em 3em;
-			}
+    position: relative;
+    background-image:
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.2)
+        ),
+        url("images/intro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1em 3em;
+}
+
 
 				#main .item.intro h1 {
 					font-size: 3em;
